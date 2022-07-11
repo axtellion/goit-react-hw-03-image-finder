@@ -47,12 +47,13 @@ export const Button = styled.button`
 export const Input = styled(Field)`
   display: inline-block;
   width: 100%;
+  height: 40px;
   font: inherit;
   font-size: 20px;
   border: none;
   outline: none;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-right: 5px;
+  padding-left: 5px;
   ::placeholder {
     font: inherit;
     font-size: 18px;
