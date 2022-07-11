@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { ModalOver, ModalWindow } from './Modal.styled';
+import PropTypes from 'prop-types';
 
 export class Modal extends Component {
   componentDidMount() {
@@ -33,3 +34,9 @@ export class Modal extends Component {
     );
   }
 }
+
+Modal.propTypes = {
+  img: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+  onCloseModal: PropTypes.func.isRequired,
+};

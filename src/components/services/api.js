@@ -7,5 +7,5 @@ export const getFotoGallery = async (values, page) => {
   const responce = await axios.get(
     `?q=${values}&page=${page}&key=${KEY}&image_type=photo&orientation=horizontal&per_page=12`
   );
-  return responce.data.hits;
+  return responce.data;
 };
